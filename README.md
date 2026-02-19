@@ -7,8 +7,10 @@ Bot automatizado para Bybit Futures que implementa la estrategia nueva del gafas
 Este bot ejecuta la siguiente estrategia:
 
 1. **Coloca 2 órdenes limit simultáneamente:**
-   - Orden de COMPRA al 1% por debajo del precio actual
-   - Orden de VENTA al 1% por encima del precio actual
+   - Orden de COMPRA al 1% por debajo del precio actual en el primer ciclo
+   - Orden de VENTA al 1% por encima del precio actual en el primer ciclo
+   - Orden de COMPRA al 2% por encima del precio actual en el segundo ciclo
+   - Orden de VENTA al 2% por encima del precio actual en el segundo ciclo
 
 2. **Cuando una orden se ejecuta:**
    - Cancela automáticamente la orden contraria
